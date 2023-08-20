@@ -45,8 +45,8 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         if(!away && !billgen){
-            this.price += 20;
             away = true;
+            this.price += 20;
         }
     }
 
@@ -54,8 +54,8 @@ public class Pizza {
         // your code goes here
         if(!billgen) {
             if (isVeg) {
-                bill += "Base Price Of The Pizza: 300";
-                bill += "\n";
+                this.bill += "Base Price Of The Pizza: 300";
+                this.bill += "\n";
             } else {
                 bill += "Base Price Of The Pizza: 400";
                 bill += "\n";
@@ -75,10 +75,10 @@ public class Pizza {
                 }
             }
             if (away) {
-                bill += "Paperbag added: 20";
+                bill += "Paperbag Added: 20";
                 bill += "\n";
             }
-            bill += ("Total price: " + getPrice());
+            bill += ("Total Price: " + getPrice());
             bill += "\n";
             billgen = true;
         }
