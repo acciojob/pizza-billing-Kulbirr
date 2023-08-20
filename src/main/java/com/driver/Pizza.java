@@ -36,8 +36,8 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
         if(!topping && !billgen){
-            if(isVeg) this.price += 120;
-            else this.price += 70;
+            if(isVeg) this.price += 70;
+            else this.price += 120;
             topping = true;
         }
     }
@@ -78,7 +78,7 @@ public class Pizza {
                 bill += "Paperbag added: 20";
                 bill += "\n";
             }
-            bill += "Total price: " + this.price;
+            bill += ("Total price: " + getPrice());
             bill += "\n";
             billgen = true;
         }
