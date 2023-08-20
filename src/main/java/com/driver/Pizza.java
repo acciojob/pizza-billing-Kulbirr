@@ -55,26 +55,29 @@ public class Pizza {
         if(!billgen) {
             if (isVeg) {
                 bill += "Base Price Of The Pizza: 300";
+                bill += "\n";
             } else {
                 bill += "Base Price Of The Pizza: 400";
+                bill += "\n";
             }
-            bill += "\n";
+
             if (cheese) {
                 bill += "Extra Cheese Added: 80";
+                bill += "\n";
             }
-            bill += "\n";
             if (topping) {
                 if (!isVeg) {
                     bill += "Extra Toppings Added: 120";
+                    bill += "\n";
                 } else {
                     bill += "Extra Toppings Added: 70";
+                    bill += "\n";
                 }
             }
-            bill += "\n";
             if (away) {
                 bill += "Paperbag added: 20";
+                bill += "\n";
             }
-            bill += "\n";
             bill += "Total price: " + this.price;
             bill += "\n";
             billgen = true;
