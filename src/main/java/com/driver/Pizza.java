@@ -76,6 +76,7 @@ public class Pizza {
             }
             bill += "\n";
             bill += "Total price: " + this.price;
+            bill += "\n";
             billgen = true;
         }
         return this.bill;
